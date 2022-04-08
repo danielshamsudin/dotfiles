@@ -7,7 +7,7 @@ case $- in
     *i*) ;;
       *) return;;
 esac
-neofetch
+
 # don't put duplicate lines or lines starting with space in the history.
 # See bash(1) for more options
 HISTCONTROL=ignoreboth
@@ -92,20 +92,6 @@ alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
 
-# custom aliases
-alias q='exit'
-alias up='sudo apt update'
-alias nv='nvim'
-alias sai='sudo apt install'
-alias c='clear'
-alias scnf='source ~/.bashrc'
-
-
-
-
-
-# end custom aliases
-
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
 alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
@@ -130,8 +116,8 @@ if ! shopt -oq posix; then
   fi
 fi
 
-export PATH=$(echo "$PATH" | sed -e 's/:\/mnt[^:]*//g')
-
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+export PATH="$PATH":"$HOME/.pub-cache/bin"
+export PATH="$PATH:/home/daniel/gradle/bin"
+ANDROID_HOME="$PATH:/usr/lib/android-sdk"
+export PATH="$PATH:/usr/lib/android-sdk/platform-tools"
+export JAVA_HOME="/usr/lib/jvm/java-8-openjdk-amd64"
