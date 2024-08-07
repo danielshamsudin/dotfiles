@@ -3,14 +3,14 @@
 add_newline = true
 
 format = """
-[](#6963FF)\
+[ \ue0a0 ](#6963FF)\
 $username\
-[](bg:#DA627D fg:#6963FF)\
+[\ue0b0](bg:#DA627D fg:#6963FF)\
 $directory\
-[](fg:#DA627D bg:#FCA17D)\
+[\ue0b0](fg:#DA627D bg:#FCA17D)\
 $git_branch\
 $git_status\
-[](fg:#FCA17D bg:#FF0000)\
+[\ue0b0](fg:#FCA17D bg:#FF0000)\
 $c\
 $elixir\
 $elm\
@@ -21,11 +21,11 @@ $julia\
 $nodejs\
 $nim\
 $rust\
-[](fg:#FF0000 bg:#06969A)\
+[\ue0b0](fg:#FF0000 bg:#06969A)\
 $docker_context\
-[](fg:#06969A bg:#33658A)\
+[\ue0b0](fg:#06969A bg:#33658A)\
 $time\
-[ ](fg:#33658A)\
+[\ue0b0 ](fg:#33658A)\
 """
 
 # Disable the blank line at the start of the prompt
@@ -36,7 +36,7 @@ $time\
 show_always = true
 style_user = "bg:#6963FF"
 style_root = "bg:#6963FF"
-format = '[$user ]($style)'
+format = '[ $user ]($style)'
 
 [directory]
 style = "bg:#DA627D"
