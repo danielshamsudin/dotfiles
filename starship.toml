@@ -5,27 +5,16 @@ add_newline = true
 format = """
 [ \ue0a0 ](#6963FF)\
 $username\
-[\ue0b0](bg:#DA627D fg:#6963FF)\
+[\ue0b0](bg:#8967b3 fg:#624e88)\
 $directory\
-[\ue0b0](fg:#DA627D bg:#FCA17D)\
+[\ue0b0](fg:#8967b3 bg:#aa60d1)\
 $git_branch\
 $git_status\
-[\ue0b0](fg:#FCA17D bg:#FF0000)\
-$c\
-$elixir\
-$elm\
-$golang\
-$haskell\
-$java\
-$julia\
-$nodejs\
-$nim\
-$rust\
-[\ue0b0](fg:#FF0000 bg:#06969A)\
+[\ue0b0](fg:#aa60d1 bg:#06969A)\
 $docker_context\
-[\ue0b0](fg:#06969A bg:#33658A)\
+[\ue0b0](fg:#06969A bg:#504b38)\
 $time\
-[\ue0b0 ](fg:#33658A)\
+[\ue0b0 ](fg:#504b38)\
 """
 
 # Disable the blank line at the start of the prompt
@@ -34,12 +23,12 @@ $time\
 # You can also replace your username with a neat symbol like  to save some space
 [username]
 show_always = true
-style_user = "bg:#6963FF"
-style_root = "bg:#6963FF"
+style_user = "bg:#624E88"
+style_root = "bg:#624E88"
 format = '[ $user ]($style)'
 
 [directory]
-style = "bg:#DA627D"
+style = "bg:#8967b3"
 format = "[ $path ]($style)"
 truncation_length = 3
 truncation_symbol = "…/"
@@ -79,12 +68,12 @@ format = '[[ $symbol ($version) ](bg:#FF0000)]($style)'
 
 [git_branch]
 symbol = ""
-style = "bg:#FCA17D"
-format = '[[ $symbol $branch ](bg:#FCA17D)]($style)'
+style = "bg:#aa60d1"
+format = '[[ $symbol $branch ]($style)]($style)'
 
 [git_status]
-style = "bg:#FCA17D"
-format = '[[($all_status$ahead_behind )](bg:#FCA17D)]($style)'
+style = "bg:#aa60d1"
+format = '[[($all_status$ahead_behind )]($style)]($style)'
 
 [golang]
 symbol = " "
@@ -123,9 +112,6 @@ format = '[[ $symbol ($version) ](bg:#FF0000)]($style)'
 
 [time]
 disabled = false
-time_format = "%R" # Hour:Minute Format
-style = "bg:#33658A"
-format = '[[  $time ](bg:#33658A)]($style)'
-
-
-
+time_format = "%R"                       # Hour:Minute Format
+style = "bg:#504b38"
+format = '[[  $time ]($style)]($style)'

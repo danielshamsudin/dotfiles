@@ -18,8 +18,6 @@ alias zcfg='nv ~/.zshrc'
 alias kcfg='nv ~/.config/kitty/kitty.conf'
 alias kcnf='source ~/.config/kitty/kitty.conf'
 alias c='clear && pls'
-alias python='python3.9'
-alias py='python3.9'
 alias nv='nvim'
 alias sconfig='nv ~/.config/starship.toml'
 alias dwmcfg='nv ~/.suckless/dwm/config.h'
@@ -27,6 +25,9 @@ alias dwmf='cd ~/.suckless/dwm'
 alias dwmres='cd ~/.suckless/dwm && make && sudo make install'
 alias smki='sudo make clean install'
 alias pls='~/.local/bin/please'
+alias py=$(pyenv which python)
+# alias python='python3'
+# alias py='python3'
 # alias ls='ef'
 alias ef='exa --tree --level=1'
 alias f='dolphin .'
@@ -37,8 +38,12 @@ alias lol='gamemoderun leagueoflegends start'
 alias lolstop='leagueoflegends kill'
 alias hw='cd ~/Documents/HW/ip-reserve/'
 alias winpy='wine ~/.wine/drive_c/users/daniel/AppData/Local/Programs/Python/Python39/Scripts/pyinstaller.exe'
-alias ss='scrot ~/Pictures/Screenshots/%b_%d_%H%M%S.png -s'
-
+alias ss="scrot ~/Pictures/Screenshots/%b_%d_%H%M%S.png -s -e 'xclip -selection clipboard -t image/png -i $f'"
+alias spwit='cd ~/Desktop/spwit/app.spwit.app'
+alias ds='cd ~/Desktop'
+alias maestro='cd ~/Desktop/maestro/maestro/'
+alias home='nmcli con up id Pacmanoii-2.4Ghz --ask'
+alias hcf='nv /home/daniel/.config/hypr/hyprland.conf'
 ## git aliases ##
 alias gac='git add . && git commit'
 alias gaction='cd .github/workflows/'
@@ -67,8 +72,9 @@ export PATH=$PATH:$ANDROID_SDK_ROOT/emulator
 export PATH=$PATH:$ANDROID_SDK_ROOT/platform-tools
 export PATH=$PATH:/home/daniel/.local/bin
 export PATH=$PATH:/usr/local/go/bin
+export PATH=$PATH:/opt/nvim-linux64/bin
 
-xinput set-prop "ELAN2204:00 04F3:30F5 Touchpad" "libinput Tapping Enabled" 1
+# xinput set-prop "ELAN2204:00 04F3:30F5 Touchpad" "libinput Tapping Enabled" 1
 eval "$(starship init zsh)"
 #~/.local/bin/please
 #figlet daniel-arch | lolcat
