@@ -42,6 +42,7 @@ alias ss="scrot ~/Pictures/Screenshots/%b_%d_%H%M%S.png -s -e 'xclip -selection 
 alias spwit='cd ~/Desktop/spwit/app.spwit.app'
 alias ds='cd ~/Desktop'
 alias maestro='cd ~/Desktop/maestro/maestro/'
+alias landing='cd ~/Desktop/maestro/landingpage_maestro/'
 alias home='nmcli con up id Pacmanoii-2.4Ghz --ask'
 alias hcf='nv /home/daniel/.config/hypr/hyprland.conf'
 ## git aliases ##

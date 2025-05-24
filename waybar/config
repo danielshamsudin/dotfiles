@@ -62,7 +62,7 @@
     "clock": {
         "tooltip-format": "{calendar}",
         "format-alt": "  {:%a, %d %b %Y}",
-        "format": "  {:%I:%M %p}"
+        "format": "  {:%I:%M %p  %d/%m/%Y}"
     },
     "network": {
         "format-wifi" : "{icon} {essid}",
