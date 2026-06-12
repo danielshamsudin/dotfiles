@@ -1,0 +1,16 @@
+/* ROUNDED THEME FOR ROFI - CATPPUCCIN SPICED */
+/* Author: Newman Sanchez (https://github.com/newmanls) */
+/* Enhanced with Catppuccin colors */
+
+* {
+    bg0:    #181825F5;
+    bg1:    #1e1e2e;
+    bg2:    #313244;
+    bg3:    #cba6f7;
+    fg0:    #cdd6f4;
+    fg1:    #f5e0dc;
+    fg2:    #bac2de;
+    fg3:    #585b70;
+}
+
+@import "template/rounded-template.rasi"
